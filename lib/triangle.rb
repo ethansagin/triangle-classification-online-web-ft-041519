@@ -11,9 +11,7 @@ class Triangle
   def kind
     tri_array = [side1, side2, side3]
     if tri_array.inject { |product, n| product * n} <= 0 || tri_array.inject { |sum, n| sum + n} < (tri_array.max)*2
-      begin
-        raise TriangleError
-        
+      raise TriangleError
     elsif tri_array.uniq.length == 1
       :equilateral
     elsif tri_array.uniq.length == 2 
@@ -23,4 +21,7 @@ class Triangle
     end
   end
 
+  class TriangleError < StandardError
+    
+  end
 end
