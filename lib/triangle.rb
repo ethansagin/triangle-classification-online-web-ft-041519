@@ -10,7 +10,8 @@ class Triangle
   
   def kind
     tri_array = [side1, side2, side3]
-    
+    if ERROR
+      
     elsif 
 
 end
