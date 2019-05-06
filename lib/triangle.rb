@@ -11,7 +11,13 @@ class Triangle
   def kind
     tri_array = [side1, side2, side3]
     if ERROR
-      
-    elsif 
+      ERROR
+    elsif tri_array.uniq.length == 1
+      :equilateral
+    elsif tri_array.uniq.length == 2 
+      :isosceles
+    elsif tri_array.uniq.length == 3 
+      :scalene
+    end
 
 end
