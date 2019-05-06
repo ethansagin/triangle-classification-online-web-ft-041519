@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     tri_array = [side1, side2, side3]
-    if tri_array.inject { |product, n| product * n} == 0 || 
+    if tri_array.inject { |product, n| product * n} <= 0 || tri_array.inject { |sum, n| sum + n} < 
       ERROR
     elsif tri_array.uniq.length == 1
       :equilateral
