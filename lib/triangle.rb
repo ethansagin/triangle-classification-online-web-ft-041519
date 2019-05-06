@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     tri_array = [side1, side2, side3]
-    if ERROR
+    if tri_array.inject
       ERROR
     elsif tri_array.uniq.length == 1
       :equilateral
