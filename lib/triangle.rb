@@ -19,5 +19,6 @@ class Triangle
     elsif tri_array.uniq.length == 3 
       :scalene
     end
+  end
 
 end
